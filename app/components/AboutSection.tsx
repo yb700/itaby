@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { FaLightbulb, FaUsers, FaHeart, FaRocket } from "react-icons/fa";
 
 const AboutSection = () => {
@@ -33,39 +32,28 @@ const AboutSection = () => {
             <div className="max-w-7xl mx-auto px-6">
                 {/* Main Content */}
                 <div className="text-center mb-16">
-                    <motion.h2
+                    <h2
                         className="text-5xl md:text-6xl font-bold tracking-tight text-gray-900 mb-8"
-                        initial={{ opacity: 0, y: -30 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8 }}
                     >
                         Our Story:{" "}
                         <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                             From Crisis to Community
                         </span>
-                    </motion.h2>
+                    </h2>
 
-                    <motion.p
+                    <p
                         className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed"
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 0.2 }}
                     >
                         What started as a late-night rescue mission for a local primary school
                         became the foundation of ITABY—a company built on care, collaboration,
                         and community values.
-                    </motion.p>
+                    </p>
                 </div>
 
                 {/* Two Column Layout */}
                 <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
                     {/* Left Column - Story */}
-                    <motion.div
-                        className="space-y-8"
-                        initial={{ opacity: 0, x: -50 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.8, delay: 0.4 }}
-                    >
+                    <div className="space-y-8">
                         <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
                             <h3 className="text-2xl font-bold text-gray-900 mb-4">The Beginning</h3>
                             <p className="text-gray-600 leading-relaxed">
@@ -90,15 +78,10 @@ const AboutSection = () => {
                                 the future without breaking the bank.
                             </p>
                         </div>
-                    </motion.div>
+                    </div>
 
                     {/* Right Column - Visual */}
-                    <motion.div
-                        className="relative"
-                        initial={{ opacity: 0, x: 50 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.8, delay: 0.6 }}
-                    >
+                    <div className="relative">
                         <div className="relative">
                             <div className="absolute inset-0 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-3xl transform rotate-6"></div>
                             <div className="absolute inset-0 bg-gradient-to-r from-blue-300/10 to-purple-300/10 rounded-3xl transform -rotate-3"></div>
@@ -111,16 +94,11 @@ const AboutSection = () => {
                                 priority
                             />
                         </div>
-                    </motion.div>
+                    </div>
                 </div>
 
                 {/* Features Grid */}
-                <motion.div
-                    className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: 0.8 }}
-                >
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {features.map((feature, index) => (
                         <div
                             key={index}
@@ -133,15 +111,10 @@ const AboutSection = () => {
                             <p className="text-gray-600">{feature.description}</p>
                         </div>
                     ))}
-                </motion.div>
+                </div>
 
                 {/* CTA */}
-                <motion.div
-                    className="text-center mt-16"
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: 1 }}
-                >
+                <div className="text-center mt-16">
                     <a
                         href="/about"
                         className="inline-block bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-4 px-10 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105"
@@ -149,7 +122,7 @@ const AboutSection = () => {
                     >
                         Learn More About Our Story
                     </a>
-                </motion.div>
+                </div>
             </div>
         </section>
     );

@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { FaShieldAlt, FaCloudUploadAlt, FaDatabase, FaNetworkWired, FaCogs, FaUsers } from "react-icons/fa";
 
 const services = [
@@ -41,12 +40,7 @@ const ServicesSection = () => {
         <section className="py-20 bg-gradient-to-r from-gray-50 to-gray-100">
             <div className="max-w-7xl mx-auto px-6 text-center">
                 {/* Heading */}
-                <motion.div
-                    initial={{ opacity: 0, y: -20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6 }}
-                    className="mb-16"
-                >
+                <div className="mb-16">
                     <h2 className="text-5xl font-bold tracking-tight text-gray-900 mb-6">
                         Smart Solutions for{" "}
                         <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
@@ -57,17 +51,14 @@ const ServicesSection = () => {
                         From upgrading CRM systems to migrating entire infrastructures, we help organizations
                         embrace the future without breaking the bank.
                     </p>
-                </motion.div>
+                </div>
 
                 {/* Services Grid */}
                 <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                     {services.map((service, index) => (
-                        <motion.div
+                        <div
                             key={index}
                             className="group flex flex-col justify-between items-center bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-200"
-                            initial={{ opacity: 0, y: 30 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.6, delay: index * 0.1 }}
                         >
                             {/* Icon */}
                             <div className="text-blue-600 mb-6 group-hover:text-blue-700 transition-colors duration-300">
@@ -91,17 +82,12 @@ const ServicesSection = () => {
                             >
                                 Learn More
                             </button>
-                        </motion.div>
+                        </div>
                     ))}
                 </div>
 
                 {/* Call to Action */}
-                <motion.div
-                    className="mt-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-white"
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, delay: 0.8 }}
-                >
+                <div className="mt-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-white">
                     <h3 className="text-3xl font-bold mb-4">Ready to Transform Your Organization?</h3>
                     <p className="text-xl mb-6 opacity-90">
                         Let's discuss how ITABY can help you embrace technology without breaking the bank.
@@ -112,7 +98,7 @@ const ServicesSection = () => {
                     >
                         Get Started Today
                     </a>
-                </motion.div>
+                </div>
             </div>
         </section>
     );

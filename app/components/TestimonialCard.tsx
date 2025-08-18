@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { FaStar } from "react-icons/fa";
 
 interface TestimonialProps {
@@ -14,11 +13,8 @@ interface TestimonialProps {
 
 const TestimonialCard: React.FC<TestimonialProps> = ({ name, feedback, position, logo, rating = 5 }) => {
     return (
-        <motion.div 
-            className="relative flex flex-col items-start space-y-6 bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border-l-4 border-secondary"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+        <div
+            className="relative flex flex-col items-start space-y-6 bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border-l-4 border-blue-600"
         >
             {/* Feedback Text */}
             <p className="text-xl text-gray-800 leading-relaxed italic">"{feedback}"</p>
@@ -32,11 +28,11 @@ const TestimonialCard: React.FC<TestimonialProps> = ({ name, feedback, position,
 
             {/* User Info */}
             <div className="flex items-center space-x-4">
-                <Image 
-                    src={logo} 
-                    alt={name} 
-                    width={80} 
-                    height={80} 
+                <Image
+                    src={logo}
+                    alt={name}
+                    width={80}
+                    height={80}
                     className="rounded-full object-cover"
                 />
                 <div>
@@ -44,7 +40,7 @@ const TestimonialCard: React.FC<TestimonialProps> = ({ name, feedback, position,
                     <p className="text-sm text-gray-500">{position}</p>
                 </div>
             </div>
-        </motion.div>
+        </div>
     );
 };
 

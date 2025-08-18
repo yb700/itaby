@@ -1,6 +1,5 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import { motion } from 'framer-motion';
 import { FaShieldAlt, FaCloudUploadAlt, FaDatabase, FaNetworkWired, FaCogs, FaUsers, FaChartLine, FaHandshake, FaTools, FaHeadset } from 'react-icons/fa';
 
 const Services = () => {
@@ -115,26 +114,16 @@ const Services = () => {
       {/* Hero Section */}
       <section className="pt-20 pb-16 bg-gradient-to-br from-blue-50 via-purple-50 to-gray-50">
         <div className="max-w-6xl mx-auto px-6 text-center">
-          <motion.h1
-            className="text-5xl md:text-7xl font-bold text-gray-900 mb-8"
-            initial={{ opacity: 0, y: -30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
+          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-8">
             Our{" "}
             <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               Services
             </span>
-          </motion.h1>
-          <motion.p
-            className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
+          </h1>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Comprehensive IT solutions designed specifically for community organizations.
             We help you embrace technology without breaking the bank.
-          </motion.p>
+          </p>
         </div>
       </section>
 
@@ -143,12 +132,9 @@ const Services = () => {
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid gap-12">
             {services.map((service, index) => (
-              <motion.div
+              <div
                 key={index}
                 className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 0 ? '' : 'lg:grid-flow-col-dense'}`}
-                initial={{ opacity: 0, y: 50 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: index * 0.1 }}
               >
                 <div className={`${index % 2 === 0 ? '' : 'lg:col-start-2'}`}>
                   <div className="text-blue-600 mb-6">{service.icon}</div>
@@ -193,7 +179,7 @@ const Services = () => {
                     </button>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -202,22 +188,14 @@ const Services = () => {
       {/* Our Process */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
-          <motion.h2
-            className="text-4xl font-bold text-gray-900 text-center mb-16"
-            initial={{ opacity: 0, y: -30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
+          <h2 className="text-4xl font-bold text-gray-900 text-center mb-16">
             Our Process
-          </motion.h2>
+          </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {process.map((step, index) => (
-              <motion.div
+              <div
                 key={index}
                 className="text-center"
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: index * 0.2 }}
               >
                 <div className="bg-white p-8 rounded-2xl shadow-lg mb-6">
                   <div className="text-blue-600 mb-4 flex justify-center">
@@ -229,7 +207,7 @@ const Services = () => {
                 {index < process.length - 1 && (
                   <div className="hidden lg:block w-full h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 mt-8"></div>
                 )}
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -238,54 +216,34 @@ const Services = () => {
       {/* Why Choose Us */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
-          <motion.div
-            className="text-center mb-16"
-            initial={{ opacity: 0, y: -30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
+          <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-8">Why Choose ITABY?</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               We understand the unique challenges faced by community organizations and provide solutions that work for your budget and mission.
             </p>
-          </motion.div>
+          </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <motion.div
-              className="text-center p-8 rounded-2xl bg-gradient-to-br from-blue-50 to-purple-50"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-            >
+            <div className="text-center p-8 rounded-2xl bg-gradient-to-br from-blue-50 to-purple-50">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Affordable Solutions</h3>
               <p className="text-gray-600">
                 We believe technology should be accessible to everyone. Our pricing is designed to fit community organization budgets.
               </p>
-            </motion.div>
+            </div>
 
-            <motion.div
-              className="text-center p-8 rounded-2xl bg-gradient-to-br from-blue-50 to-purple-50"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-            >
+            <div className="text-center p-8 rounded-2xl bg-gradient-to-br from-blue-50 to-purple-50">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Community Focus</h3>
               <p className="text-gray-600">
                 We're committed to strengthening the organizations that strengthen our communities. Your success is our success.
               </p>
-            </motion.div>
+            </div>
 
-            <motion.div
-              className="text-center p-8 rounded-2xl bg-gradient-to-br from-blue-50 to-purple-50"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-            >
+            <div className="text-center p-8 rounded-2xl bg-gradient-to-br from-blue-50 to-purple-50">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Proven Results</h3>
               <p className="text-gray-600">
                 Our track record speaks for itself. We've helped numerous organizations transform their technology infrastructure.
               </p>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -293,11 +251,7 @@ const Services = () => {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
+          <div>
             <h2 className="text-4xl font-bold mb-8">Ready to Transform Your Organization?</h2>
             <p className="text-xl mb-8 opacity-90">
               Let's discuss how ITABY can help you embrace technology without breaking the bank.
@@ -308,7 +262,7 @@ const Services = () => {
             >
               Get Started Today
             </a>
-          </motion.div>
+          </div>
         </div>
       </section>
 
