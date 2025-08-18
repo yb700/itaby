@@ -19,7 +19,6 @@ const Footer = () => {
                             priority
                             className="hover:scale-105 transition-transform duration-300 mb-2"
                         />
-                        <h3 className="text-2xl font-bold text-white mb-1">ITABY</h3>
                         <p className="text-sm text-blue-400 mb-2">It's All About You</p>
                     </div>
                     <p className="text-sm text-center md:text-left">

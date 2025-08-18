@@ -2,7 +2,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { FaLightbulb, FaUsers, FaHeart, FaRocket, FaShieldAlt, FaHandshake } from 'react-icons/fa';
+import { FaUsers, FaHeart, FaShieldAlt } from 'react-icons/fa';
 
 const About = () => {
   const values = [
@@ -52,7 +52,7 @@ const About = () => {
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen pt-24">
       <Header />
 
       {/* Hero Section */}

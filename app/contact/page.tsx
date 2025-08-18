@@ -4,11 +4,11 @@ import Footer from '../components/Footer';
 
 const Contact = () => {
   return (
-    <>
+    <div className="min-h-screen pt-24">
       <Header />
       <ContactForm />
       <Footer />
-    </>
+    </div>
   );
 };
 

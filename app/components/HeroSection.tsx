@@ -33,7 +33,7 @@ const HeroSection = () => {
                     playsInline
                     className="w-full h-full object-cover opacity-80"
                 >
-                    <source src="\heroVideo\3129957-uhd_2560_1440_25fps.mp4" type="video/mp4" />
+                    <source src="/heroVideo/3129957-uhd_2560_1440_25fps.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
                 {/* Fallback Image */}

@@ -13,7 +13,7 @@ const Header = () => {
     };
 
     return (
-        <header className="text-gray-800 shadow-lg sticky top-0 z-50 bg-white/95 backdrop-blur-sm mx-4 mt-4 rounded-full">
+        <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-lg">
             <div className="container mx-auto flex justify-between items-center py-4 px-6">
                 {/* Logo Section */}
                 <Link href="/" className="flex items-center">
@@ -24,8 +24,8 @@ const Header = () => {
                         <Image
                             src="/logo/logo.png"
                             alt="ITABY Logo"
-                            width={60}
-                            height={60}
+                            width={80}
+                            height={80}
                             className="object-contain"
                         />
                     </motion.div>
@@ -74,7 +74,7 @@ const Header = () => {
             <AnimatePresence>
                 {isMobileMenuOpen && (
                     <motion.nav
-                        className="md:hidden bg-white text-gray-800 shadow-lg rounded-b-3xl"
+                        className="md:hidden bg-white text-gray-800 shadow-lg"
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -20 }}
