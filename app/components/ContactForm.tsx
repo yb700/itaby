@@ -111,7 +111,7 @@ const ContactForm = () => {
                   <FaEnvelope className="text-2xl text-secondary" />
                   <div>
                     <h4 className="text-xl text-gray-600">Email us</h4>
-                    <h6 className="text-lg text-secondary">Info@itaby.com</h6>
+                    <h6 className="text-lg text-secondary">Info@itaby.co.uk</h6>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
@@ -132,5 +132,6 @@ const ContactForm = () => {
     </section>
   );
 };
+
 
 export default ContactForm;
