@@ -105,7 +105,7 @@ const Footer = () => {
                                 href="mailto:info@itaby.com"
                                 className="hover:text-gray-400 transition-colors duration-300"
                             >
-                                info@itaby.com
+                                info@itaby.co.uk
                             </a>
                         </li>
                         <li>
@@ -133,5 +133,6 @@ const Footer = () => {
         </footer>
     );
 };
+
 
 export default Footer;
